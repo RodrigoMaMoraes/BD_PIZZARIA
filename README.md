@@ -1,5 +1,7 @@
 # BD_PIZZARIA
 
+## ETAPA 1
+
 -- Cria a tabela de Pizzaiolos --
 CREATE TABLE Pizzaiolos (
     ID_Pizzaiolo INT AUTO_INCREMENT PRIMARY KEY,
@@ -62,6 +64,8 @@ INSERT INTO PizzaIngredientes (ID_Pizza, ID_Ingrediente) VALUES
     (4, 2),  -- Molho de Tomate na Pizza Vegetariana
     (4, 4),  -- Mussarela na Pizza Vegetariana
     (4, 5);  -- Cebola na Pizza Vegetariana
+
+## ETAPA 2
 
 -- Relatório: Todas as pizzas e os pizzaiolos aptos a produzi-las --
 SELECT p.Nome AS Pizza, pz.Nome AS Pizzaiolo
