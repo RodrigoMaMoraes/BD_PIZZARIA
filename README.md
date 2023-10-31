@@ -90,3 +90,9 @@ GROUP BY i.ID_Ingrediente;
 SELECT p.Nome AS Pizza, pz.Nome AS Pizzaiolo, p.InstrucoesPreparo
 FROM Pizzas p
 JOIN Pizzaiolos pz ON p.ID_Pizzaiolo = pz.ID_Pizzaiolo;
+
+## ETAPA 3 
+
+-- MODELO LÓGICO --
+
+![MODELOPIZZA]()
