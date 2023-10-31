@@ -95,4 +95,4 @@ JOIN Pizzaiolos pz ON p.ID_Pizzaiolo = pz.ID_Pizzaiolo;
 
 -- MODELO LÓGICO --
 
-![MODELOPIZZA]()
+![MODELOPIZZA](https://github.com/RodrigoMaMoraes/BD_PIZZARIA/blob/main/PIZZARIABD.PNG)
