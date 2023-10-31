@@ -72,12 +72,16 @@ SELECT p.Nome AS Pizza, pz.Nome AS Pizzaiolo
 FROM Pizzas p
 JOIN Pizzaiolos pz ON p.ID_Pizzaiolo = pz.ID_Pizzaiolo;
 
+![R1](https://github.com/RodrigoMaMoraes/BD_PIZZARIA/blob/main/RPIZZAS/R1PIZZA.PNG)
+
 -- Relatório: Todas as pizzas e seus ingredientes --
 SELECT p.Nome AS Pizza, GROUP_CONCAT(i.Nome) AS Ingredientes
 FROM Pizzas p
 JOIN PizzaIngredientes pi ON p.ID_Pizza = pi.ID_Pizza
 JOIN Ingredientes i ON pi.ID_Ingrediente = i.ID_Ingrediente
 GROUP BY p.ID_Pizza;
+
+![R2](https://github.com/RodrigoMaMoraes/BD_PIZZARIA/blob/main/RPIZZAS/R2PIZZA.PNG)
 
 -- Relatório: Todos os ingredientes e as pizzas onde são utilizados --
 SELECT i.Nome AS Ingrediente, GROUP_CONCAT(p.Nome) AS Pizzas
@@ -86,10 +90,14 @@ JOIN PizzaIngredientes pi ON i.ID_Ingrediente = pi.ID_Ingrediente
 JOIN Pizzas p ON pi.ID_Pizza = p.ID_Pizza
 GROUP BY i.ID_Ingrediente;
 
+![R3](https://github.com/RodrigoMaMoraes/BD_PIZZARIA/blob/main/RPIZZAS/R3PIZZA.PNG)
+
 -- Relatório: Sabores de todas as pizzas, pizzaiolos e instruções --
 SELECT p.Nome AS Pizza, pz.Nome AS Pizzaiolo, p.InstrucoesPreparo
 FROM Pizzas p
 JOIN Pizzaiolos pz ON p.ID_Pizzaiolo = pz.ID_Pizzaiolo;
+
+![R4](https://github.com/RodrigoMaMoraes/BD_PIZZARIA/blob/main/RPIZZAS/R4PIZZA.PNG)
 
 ## ETAPA 3 
 
